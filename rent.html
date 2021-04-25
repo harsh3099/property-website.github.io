@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+
+    }
+
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .navbar {
+        overflow: hidden;
+        padding-left: 0px;
+        /* background-color: rgb(43, 129, 179); */
+        font-family: Arial;
+        margin-top: 1px;
+    }
+
+    .head {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height: 121px;
+        background-color: rgb(63, 67, 97);
+        margin-top: -8px;
+        margin-left: -8px;
+        margin-right: -8px;
+
+    }
+
+    .navbar a {
+        float: left;
+        /* font-size: 20px; */
+        color: #000;
+        text-align: center;
+        padding: 3px 60px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        font-family: 'Courier New', Courier, monospace;
+
+        border-radius: 4px;
+
+    }
+
+    .navbar h1 {
+        float: left;
+        font-size: 30px;
+        color: rgb(231, 231, 219);
+        text-align: center;
+        padding: 3px 20px;
+        text-decoration: none;
+        font-family: cursive;
+        margin-top: -9px;
+        margin-right: 90px;
+    }
+
+    .navbar a.active,
+    a:hover {
+
+        background: white;
+        border-radius: 0px;
+    }
+
+
+    .logo img {
+        height: 62px;
+        width: 106px;
+        margin-left: 76px;
+
+    }
+
+
+    .main {
+        width: 100vw;
+        height: auto;
+        margin: 1% auto;
+        font-family: 'Roboto', sans-serif;
+        background-color: beige;
+
+    }
+
+    .box {
+        width: 300px;
+        margin-bottom: 3%;
+
+    }
+
+    .box img {
+        width: 276px;
+        height: 214px;
+        margin-bottom: 6%;
+        margin-left: 0%;
+
+    }
+
+    .box h3 {
+        margin-bottom: 4%;
+        margin-left: 0%;
+    }
+
+    .box p {
+        margin-bottom: 4%;
+        margin-left: 0%
+    }
+
+    .shop {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2%;
+        padding-right: 1%;
+
+    }
+
+
+    .click {
+        margin-top: 4%;
+        width: 120px;
+        height: 43px;
+        background-color: rgb(35, 36, 35);
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        font-size: 1em;
+        margin-left: 0%;
+
+
+
+    }
+
+    #divider {
+        text-align: center;
+        margin-bottom: 6%;
+        margin-top: 0%;
+        padding-top: 3px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+        font-size: 4.0em;
+        background: beige;
+    }
+
+    .location img {
+        height: 31px;
+        width: 33px;
+        margin-bottom: 1px;
+    }
+
+    .price img {
+        height: 31px;
+        width: 33px;
+        margin-bottom: 0px;
+    }
+
+    .search {
+        width: 460px;
+        border-radius: 2px;
+        height: 44px;
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        left: 69%;
+        top: -75px;
+      
+    }
+
+    .search input {
+        background: none;
+        border: none;
+        /* padding: 5px; */
+        width: 100%;
+        height: 100%;
+    }
+
+    .icon img {
+        height: 38px;
+        width: 35px;
+        margin: 1px;
+        opacity: 0.5;
+       
+    }
+    .icon{
+        border: none;
+    }
+</style>
+
+<body>
+    <div class="head">
+        <div class="logo">
+            <img src="logo.jpg" alt="">
+            <div class="navbar">
+                <h1>HOME FINDER</h1>
+                <a href="index.html"><b>Home</b></a>
+                <a href="buy.html"><b>Buy</b></a>
+                <a href="sell.html"><b>Sell</b></a>
+                <a href="rent.html" class="active" href="#" style="color: blue;"><b>Rent</b></a>
+                <a href="contact .html"><b>Contact us</b></a>
+                <a href="signup.html"><b> Hello,sign up</b></a>
+            </div>
+        </div>
+
+        <main class="main">
+            <h2 id="divider">Home for Rent</h2>
+            <div class="search">
+                <input type="text" placeholder="Search by location">
+                <!-- <button class="find">search</button> -->
+                <button class="icon" ><img src="css//fa/search.png" alt="search"></button>
+            </div>
+            <section class="shop">
+                <div class="box">
+                    <img src="img//a1.jpg" alt="home">
+                    <h3 class="location">Delhi</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="location"><img src="img\loc.jpg" class="loc"> Rajiv chowk,New Delhi</h5>
+                    <h5 class="price"><img src="img\cash1.jpg" class="cash"> $10k-20k</h5>
+                    <button class="click">Book Now</button>
+                </div>
+                <div class="box">
+                    <img src="img//a2.jpg" alt="home">
+                    <h3 class="location">Delhi</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="location"><img src="img\loc.jpg" class="loc"> Rajiv chow,New Delhi</h5>
+                    <h5 class="price"><img src="img\cash1.jpg" class="cash"> $15k-25k</h5>
+                    <button class="click">Book Now</button>
+                </div>
+                <div class="box">
+                    <img src="img//a3.jpg" alt="home">
+                    <h3 class="location">Delhi</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="location"><img src="img\loc.jpg" class="loc"> Rajiv chow,New Delhi</h5>
+                    <h5 class="price"><img src="img\cash1.jpg" class="cash"> $12k-20k</h5>
+                    <button class="click">Book Now</button>
+                </div>
+            </section>
+            <section class="shop">
+                <div class="box">
+                    <img src="img//a4.jpg" alt="home">
+                    <h3 class="location">Delhi</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="location"><img src="img\loc.jpg" class="loc"> Rajiv chow,New Delhi</h5>
+                    <h5 class="price"><img src="img\cash1.jpg" class="cash"> $10k-25k</h5>
+                    <button class="click">Book Now</button>
+                </div>
+                <div class="box">
+                    <img src="img//a5.jpg" alt="home">
+                    <h3 class="location">Delhi</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="location"><img src="img\loc.jpg" class="loc"> Rajiv chow,New Delhi</h5>
+                    <h5 class="price"><img src="img\cash1.jpg" class="cash"> $20k-25k</h5>
+                    <button class="click">Book Now</button>
+                </div>
+                <div class="box">
+                    <img src="img//a6.jpg" alt="home">
+                    <h3 class="location">Delhi</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="location"><img src="img\loc.jpg" class="loc"> Rajiv chow,New Delhi</h5>
+                    <h5 class="price"><img src="img\cash1.jpg" class="cash"> $25k-30k</h5>
+                    <button class="click">Book Now</button>
+                </div>
+            </section>
+            <section class="shop">
+                <div class="box">
+                    <img src="img//a7.jpg" alt="home">
+                    <h3 class="location">Delhi</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="location"><img src="img\loc.jpg" class="loc"> Rajiv chow,New Delhi</h5>
+                    <h5 class="price"><img src="img\cash1.jpg" class="cash"> $25k-35k</h5>
+                    <button class="click">Book Now</button>
+                </div>
+                <div class="box">
+                    <img src="img//a8.jpg" alt="home">
+                    <h3 class="location">Delhi</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="location"><img src="img\loc.jpg" class="loc"> Rajiv chow,New Delhi</h5>
+                    <h5 class="price"><img src="img\cash1.jpg" class="cash"> $10k-20k</h5>
+                    <button class="click">Book Now</button>
+                </div>
+                <div class="box">
+                    <img src="img//a9.jpg" alt="home">
+                    <h3 class="location">Delhi</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="location"><img src="img\loc.jpg" class="loc"> Rajiv chow,New Delhi</h5>
+                    <h5 class="price"><img src="img\cash1.jpg" class="cash"> $30k-35k</h5>
+                    <button class="click">Book Now</button>
+                </div>
+            </section>
+
+        </main>
+
+
+
+
+</body>
+
+</html>

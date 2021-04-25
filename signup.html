@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    ;
+  }
+
+  * {
+    box-sizing: border-box
+  }
+
+  .navbar {
+    overflow: hidden;
+    padding-left: 14px;
+    /* background-color: rgb(43, 129, 179); */
+    font-family: Arial;
+    margin-top: 1px;
+  }
+
+  .head {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 121px;
+    background-color: rgb(63, 67, 97);
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -9px;
+
+  }
+
+  .navbar a {
+    float: left;
+    /* font-size: 20px; */
+    color: #000;
+    text-align: center;
+    padding: 6px 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+
+    border-radius: 0px;
+
+  }
+
+  .navbar h1 {
+    float: left;
+    font-size: 30px;
+    color: rgb(231, 231, 219);
+    text-align: center;
+    padding: 1px 17px;
+    text-decoration: none;
+    font-family: cursive;
+    margin-top: -9px;
+    margin-right: 90px;
+  }
+
+  .navbar a.active,
+  a:hover {
+
+    background: white;
+    border-radius: 0px;
+  }
+
+  .logo img {
+    height: 62px;
+    width: 106px;
+    margin-left: 76px;
+    margin-top: 8px;
+
+  }
+  body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: url(img/10.jpg) ;
+	background-size: cover;
+	background-position: center;
+  overflow-x: hidden;
+	
+}
+.sign-up-form
+{
+	width: 350px;
+	background: #fff;
+	padding: 20px;
+	margin: 4% auto ;
+	text-align: center;
+}
+.sign-up-form h1
+{
+	color: #1c8adb;
+	margin-bottom: 30px;
+}
+.input-box
+{
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px 0;
+	width: 90%;
+	border: 1px solid #999;
+	outline: none;
+}
+button
+{
+	color: #fff;
+	width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.signup-btn
+{
+	background-color: #21afde;
+}
+.twitter-btn
+{
+	background-color: #21afde;
+}
+a
+{
+	text-decoration: none;
+}
+hr
+{
+	margin-top: 20px;
+	width: 80%;
+}
+.or
+{
+	background: #fff;
+	width: 30px;
+	margin: -19px auto 10px;
+}
+img
+{
+	width: 70px;
+	margin-top: -50px;
+
+}
+
+
+
+</style>
+
+<body>
+  <div class="head">
+    <div class="logo">
+        <img src="logo.jpg" alt="">
+        <div class="navbar">
+            <h1>HOME FINDER</h1>
+            <a href="index.html"><b>Home</b></a>
+            <a href="buy.html"><b>Buy</b></a>
+            <a href="sell.html"><b>Sell</b></a>
+            <a href="rent.html"><b>Rent</b></a>
+            <a href="contact .html"><b>Contact us</b></a>
+            <a href="signup.html" class="active" href="#" style="color: blue;"><b> Hello,sign up</b></a>
+        </div>
+    </div>
+
+
+    <div class="sign-up-form">
+      <img src="img/2.png">
+      <h1>Sign Up Now</h1>
+      <form>
+        <input type="email" class="input-box" placeholder="Your Email">
+        <input type="password" class="input-box" placeholder="Your Password">
+        <input type="password" class="input-box" placeholder="Confirm Password">
+        <p><span><input type="checkbox"></span> I agree to the terms of services</p>
+        <button type="button" class="signup-btn">Sign up</button>
+        <hr>
+        <p class="or">OR</p>
+       
+      <p>Do you have an account ? <a href="#">Sign in</a></p>
+      </form>
+    </div>
+  
+
+</body>
+
+</html>

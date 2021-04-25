@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property wala</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="head">
+        <div class="logo">
+            <img src="apple-touch-icon.png" alt="">
+            <div class="navbar">
+                <h1>HOME FINDER</h1>
+                
+                <a href="index.html" class="active" style="color: blue;"><b>Home</b></a>
+                <a href="buy.html"><b>Buy</b></a>
+                <a href="sell.html"><b>Sell</b></a>
+                <a href="rent.html"><b>Rent</b></a>
+                <a href="contact .html"><b>Contact us</b></a>
+                <a href="signup.html"><b>sign up</b></a>
+                
+            </div>
+        </div>
+
+        <main class="main">
+            <section class="top">
+              <!-- <img src="bg.jpg" alt="banner" class="banner"> -->
+                 <div class="slider-box">
+                    <div id="slider">
+                        <img src="bg3.jpg" alt="">
+                        <img src="bg2.jpg" alt="">
+                        <img src="bg.jpg" alt="">
+                        <img src="bg4.jpg" alt="">
+                    </div>
+                    <div class="indicators">
+                        <span id="btn1" class="active"></span>
+                        <span id="btn2"></span>
+                        <span id="btn3"></span>
+                        <span id="btn4"></span>
+                    </div>
+                </div>
+
+
+                <script>
+
+                    var slide = document.getElementById("slider");
+                    var btn1 = document.getElementById('btn1');
+                    var btn2 = document.getElementById('btn2');
+                    var btn3 = document.getElementById('btn3');
+                    var btn4 = document.getElementById('btn4');
+
+                    btn1.onclick = function () {
+                        slide.style.transform = "translateX(0px)";
+                        btn1.classList.add('active');
+                        btn2.classList.remove('active');
+                        btn3.classList.remove('active');
+                        btn4.classList.remive('active');
+                    };
+                    btn2.onclick = function () {
+                        slide.style.transform = "translateX(-100%)";
+                        btn1.classList.remove('active');
+                        btn2.classList.add('active');
+                        btn3.classList.remove('active');
+                        btn4.classList.remove('active');
+                    };
+                    btn3.onclick = function () {
+                        slide.style.transform = "translateX(-200%)";
+                        btn1.classList.remove('active');
+                        btn2.classList.remove('active');
+                        btn3.classList.add('active');
+                        btn4.classList.remove('active');
+                    };
+                    btn4.onclick = function () {
+                        slide.style.transform = "translateX(-300%)";
+                        btn1.classList.remove('active');
+                        btn2.classList.remove('active');
+                        btn3.classList.remove('active');
+                        btn4.classList.add('active');
+                    };
+
+                </script>
+                
+                
+
+
+
+
+
+
+                <div class="search">
+
+
+
+
+                    <input type="text" placeholder="Delhi,Mumbai,Kolkata">
+
+                    <button class="icon"><img src="css//fa/search.png" alt="search"></button>
+
+                </div>
+
+
+
+            </section>
+            <h2 id="divider"><b>TOP PICKS</b></h2>
+
+            <section class="shop">
+                <div class="box">
+                    <img src="img//h1.jpg" alt="home">
+                    <h3 class="location">Delhi</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="price">$100k-250k</h5>
+                    <button class="click">know more</button>
+                </div>
+                <div class="box">
+                    <img src="img//h2.jpg" alt="home">
+                    <h3 class="location">Mumbai</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="price">$100k-250k</h5>
+                    <button class="click">know more</button>
+                </div>
+                <div class="box">
+                    <img src="img//h3.jpg" alt="home">
+                    <h3 class="location">Bangalore</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="price">$100k-250k</h5>
+                    <button class="click">know more</button>
+                </div>
+            </section>
+            <section class="shop">
+                <div class="box">
+                    <img src="img//h4.jpg" alt="home">
+                    <h3 class="location">Chennai</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="price">$100k-250k</h5>
+                    <button class="click">know more</button>
+                </div>
+                <div class="box">
+                    <img src="img//h5.jpg" alt="home">
+                    <h3 class="location">Pune</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="price">$100k-250k</h5>
+                    <button class="click">know more</button>
+                </div>
+                <div class="box">
+                    <img src="img//h7.jpg" alt="home">
+                    <h3 class="location">Bhopal</h3>
+                    <p class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore tenetur rem excepturi
+                        repellendus possimus consectetur accusamus dolores?
+                    </p>
+                    <h5 class="price">$100k-250k</h5>
+                    <button class="click">know more</button>
+                </div>
+            </section>
+
+
+
+        </main>
+        <footer class="fotter">
+            <div class="f1">
+                <div class="line1">
+                    <a href="#" class="nlinks" style="text-decoration:none;color: black;">Locations</a>
+                    <a href="#" class="nlinks" style="text-decoration:none;color: black;">Developers</a>
+                    <a href="#" class="nlinks" style="text-decoration:none;color: black;">Hot Zones</a>
+                    <a href="#" class="nlinks" style="text-decoration:none;color: black;">Sold</a>
+                </div>
+                <div class="line2">
+                    <a href="#" class="nlinks" style="text-decoration:none;color: black;">Buy</a>
+                    <a href="#" class="nlinks" style="text-decoration:none;color: black;">Sell</a>
+                    <a href="#" class="nlinks" style="text-decoration:none;color: black;">Rent</a>
+
+                </div>
+                <div class="line3">
+                    <div class="sub">
+                        <input type="text" placeholder="subscrive">
+                        <button class="subtn">Enter</button>
+                    </div>
+                </div>
+            </div>
+            <div class="f2">
+
+            </div>
+            <div class="center">
+                copyright &copy;www.Homefinder.com.all right reserved|
+            </div>
+        </footer>
+
+
+</body>
+
+</html>
